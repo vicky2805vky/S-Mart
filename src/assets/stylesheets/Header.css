@@ -1,0 +1,68 @@
+header {
+  margin-bottom: 20px;
+  font-size: var(--fs-m);
+  color: var(--main-color);
+}
+
+nav {
+  justify-content: space-between;
+  background: var(--primary-bg-gradient);
+  border-radius: 30px;
+  padding-inline: var(--gap);
+}
+
+nav section {
+  padding: 1%;
+  display: flex;
+  flex-grow: 2;
+  gap: clamp(20px, 5vw, 60px);
+}
+
+.logo {
+  font-size: var(--fs-l);
+  font-weight: var(--fw-bold);
+}
+
+header ul {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-icon {
+  font-size: var(--fs-m);
+  position: relative;
+  margin-right: 5px;
+}
+
+.cart-icon::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--fs-s);
+  width: var(--fs-s);
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  font-weight: 900;
+  border-radius: 50%;
+  font-size: var(--fs-xs);
+}
+
+#toggle-theme {
+  position: absolute;
+  top: -9999px;
+}
+.theme-icon {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .header-label {
+    display: none;
+  }
+}

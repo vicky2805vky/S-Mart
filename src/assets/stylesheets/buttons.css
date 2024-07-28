@@ -1,0 +1,89 @@
+.button-1 {
+  font-size: var(--fs-s);
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  will-change: box-shadow, transform;
+  background: var(--primary-bg-color);
+  box-shadow: 0px 2px 4px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%),
+    inset 0px -3px 0px var(--primary-bg-color);
+  padding: 1em 2em;
+  border-radius: 6px;
+  color: var(--btn-color);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.button-1:hover {
+  box-shadow: 0px 4px 8px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%),
+    inset 0px -3px 0px var(--primary-bg-color);
+  transform: translateY(-2px);
+}
+.button-1:active {
+  box-shadow: inset 0px 3px 7px #d6d6e7;
+  transform: translateY(2px);
+}
+
+.button-2 {
+  color: var(--btn-color);
+  font-size: var(--fs-m);
+  display: block;
+  width: fit-content;
+  margin: var(--gap) auto;
+  padding: 1em;
+  border-radius: 30px;
+  background: skyblue;
+  box-shadow: 10px 6px rgb(114, 196, 228);
+  transition: var(--transition);
+}
+
+.button-2:active {
+  transform: translate(10px, 3px);
+  box-shadow: 0px 0px rgb(123, 198, 228);
+}
+
+.button-3 {
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: var(--btn-color);
+  cursor: pointer;
+  padding: 1em;
+  transition: box-shadow 0.15s, transform 0.15s;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-3:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.button-3:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-3:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.button-4 {
+  width: clamp(10px, 20vw, 30px);
+  height: clamp(10px, 20vw, 30px);
+  font-size: var(--fs-s);
+  color: black;
+  background: var(--primary-bg-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.button-4:active {
+  scale: 0.8;
+}
+.button-4:disabled {
+  background: silver;
+}

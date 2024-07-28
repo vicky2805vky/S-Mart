@@ -1,0 +1,22 @@
+.non-empty-cart .cart-products-container {
+  padding-bottom: var(--space);
+  border-bottom: 1px solid #333;
+}
+.non-empty-cart .cart-summary-container p {
+  width: 50%;
+  margin-block: var(--space);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
+}
+.non-empty-cart .cart-summary-container table {
+  width: 50%;
+}
+.non-empty-cart .cart-summary-container tr {
+  background: var(--primary-bg-gradient);
+  font-size: var(--fs-l);
+}
+
+.non-empty-cart .cart-summary-container td {
+  padding: 1em;
+  text-align: center;
+}

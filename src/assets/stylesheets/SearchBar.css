@@ -1,0 +1,12 @@
+.search-box {
+  display: flex;
+  gap: 5px;
+  margin-right: var(--gap);
+}
+
+header input {
+  width: clamp(80px, 20vw, 200px);
+  height: clamp(10px, 20vw, 30px);
+  padding: 5% 10%;
+  border-radius: calc(30px / 2);
+}

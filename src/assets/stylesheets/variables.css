@@ -1,0 +1,60 @@
+:root {
+  --btn-color: #36395a;
+  --primary-bg-color: lightblue;
+
+  --fs-xs: clamp(8px, 2vw, 10px);
+  --fs-s: clamp(10px, 2vw, 12px);
+  --fs-m: clamp(12px, 3vw, 16px);
+  --fs-l: clamp(14px, 3vw, 18px);
+  --fs-xl: clamp(16px, 3vw, 20px);
+
+  --fw-normal: 500;
+  --fw-bold: 700;
+  --fw-bolder: 900;
+
+  color: var(--main-color);
+
+  --gap: 10px;
+  --space: 5%;
+
+  --transition: 0.5s ease;
+}
+
+.light {
+  --main-bg-gradient: linear-gradient(45deg, pink, lightblue);
+  --primary-bg-gradient: radial-gradient(
+    circle at 7.5% 24%,
+    rgb(237, 161, 193) 0%,
+    rgb(250, 178, 172) 25.5%,
+    rgb(190, 228, 210) 62.3%,
+    rgb(215, 248, 247) 93.8%
+  );
+  --secondary-bg-gradient: linear-gradient(45deg, lightcoral, lightblue);
+  --main-color: black;
+  --secondary-color: #555;
+  --shadow: 10px 10px 20px #00000055, -10px -10px 20px #00000055;
+}
+
+.dark {
+  --main-bg-gradient: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57) 11.2%,
+    rgb(16, 37, 60) 51.2%,
+    rgb(0, 0, 0) 98.6%
+  );
+
+  --primary-bg-gradient: linear-gradient(to right, #000000, #434343);
+
+  --secondary-bg-gradient: radial-gradient(
+    circle at -8.9% 51.2%,
+    rgb(255, 124, 0) 0%,
+    rgb(255, 124, 0) 15.9%,
+    rgb(255, 163, 77) 15.9%,
+    rgb(255, 163, 77) 24.4%,
+    rgb(19, 30, 37) 24.5%,
+    rgb(19, 30, 37) 66%
+  );
+
+  --main-color: white;
+  --secondary-color: rgb(224, 211, 211);
+}

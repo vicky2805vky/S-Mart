@@ -1,0 +1,24 @@
+.cart-product-card {
+  height: fit-content;
+  padding: 2em;
+  background: var(--primary-bg-gradient);
+  justify-content: space-between;
+  text-align: center;
+  font-size: var(--fs-m);
+  border-radius: 20px;
+  color: var(--main-color);
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+
+.cart-product-card > div {
+  flex: 1;
+}
+
+.cart-product-card button {
+  font-size: var(--fs-xs);
+}
+
+.cart-product-card img {
+  width: clamp(100px, 20%, 150px);
+}
