@@ -21,7 +21,6 @@ body {
 button {
   all: unset;
   cursor: pointer;
-  font-family: "JetBrains Mono", monospace;
 }
 
 ul,

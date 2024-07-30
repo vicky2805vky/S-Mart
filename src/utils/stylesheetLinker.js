@@ -12,6 +12,8 @@ import "../assets/stylesheets/NonEmptyCart.css";
 import "../assets/stylesheets/CartProductCard.css";
 import "../assets/stylesheets/ErrorPage.css";
 import "../assets/stylesheets/Notification.css";
+import "../assets/stylesheets/LoadingScreen.css";
+import "../assets/stylesheets/SignIn.css";
 
 //UTILITIES
 import "../assets/stylesheets/utilities.css";

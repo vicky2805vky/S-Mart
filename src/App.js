@@ -9,19 +9,25 @@ import ProductViewPage from "./pages/productViewPage";
 import { useDispatch, useSelector } from "react-redux";
 import { getCartItems, getProducts } from "./services/api/productsApi";
 import { Bounce, ToastContainer } from "react-toastify";
+import LoadingScreen from "./components/others/LoadingScreen";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
-  const { error, theme } = useSelector((store) => store.product);
+  const { products, error, theme } = useSelector((store) => store.product);
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(getProducts());
     dispatch(getCartItems());
   }, []);
+
   document.body.classList.remove("light");
   document.body.classList.remove("dark");
   document.body.classList.add(theme);
 
   if (error.hasError) return <ErrorPage />;
+
+  if (products.length === 0) return <LoadingScreen />;
 
   return (
     <div className="App">
@@ -30,6 +36,7 @@ function App() {
         <Route path="/product/:id" element={<ProductBuyPage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/error" element={<ErrorPage code={500} />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route path="*" element={<ErrorPage code={404} />} />
       </Routes>
       <ToastContainer

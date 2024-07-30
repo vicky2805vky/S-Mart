@@ -34,7 +34,7 @@ const Header = () => {
         </section>
         <ul>
           <li>
-            <Link>
+            <Link to="/login">
               <span className="header-icon">
                 <FaUser />
               </span>

@@ -7,6 +7,7 @@
   --fs-m: clamp(12px, 3vw, 16px);
   --fs-l: clamp(14px, 3vw, 18px);
   --fs-xl: clamp(16px, 3vw, 20px);
+  --fs-xxl: clamp(20px, 3vw, 30px);
 
   --fw-normal: 500;
   --fw-bold: 700;
@@ -30,6 +31,7 @@
     rgb(215, 248, 247) 93.8%
   );
   --secondary-bg-gradient: linear-gradient(45deg, lightcoral, lightblue);
+
   --main-color: black;
   --secondary-color: #555;
   --shadow: 10px 10px 20px #00000055, -10px -10px 20px #00000055;
